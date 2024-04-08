@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clsprm"
+dynamic = ["version"]
+authors = [
+    { name = "Mohammad Zenouzzadeh", email = "zenouzzadeh@uni-mannheim.de" },
+]
+description = "Capacitated lot sizing model with remanufacturing"
+readme = "README.md"
+requires-python = ">=3.8,<3.11"
+dependencies = ["pydantic>=2.6.4", "docplex>=2.27"]
+
+[tool.setuptools_scm]
+version_file = "src/clsprm/_version.py"
