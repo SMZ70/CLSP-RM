@@ -1,6 +1,7 @@
-from pydantic import BaseModel, model_validator, field_validator
-from typing import TypeAlias
 import itertools
+from typing import TypeAlias
+
+from pydantic import BaseModel, model_validator
 
 Period: TypeAlias = int
 
